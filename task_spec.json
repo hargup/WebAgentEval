@@ -1,0 +1,115 @@
+[
+    {
+        "id": "data_retrieval_weather",
+        "input": "Extract the current temperature and weather condition from Weather.com for New York City. URL: https://weather.com/weather/today/l/f892433d7660da170347398eb8e3d722d8d362fe7dd15af16ce88324e1b96e70",
+        "expected_output": {
+            "temperature_fahrenheit": "48",
+            "condition": "cloudy"
+        },
+        "output_schema": null,
+        "auth": false
+    },
+    {
+        "id": "tweet_lfg",
+        "input": "Go to https://twitter.com and tweet 'LFG'",
+        "expected_output": {
+            "loginStatus": "Success",
+            "message": "Logged in successfully."
+        },
+        "output_schema": null,
+        "auth": true
+    },
+    {
+        "id": "form_submission_gform",
+        "input": "Fill the form at https://forms.gle/PVnxKzvzcK95gfd76",
+        "expected_output": {
+            "formSubmissionStatus": "Success"
+        },
+        "output_schema": null,
+        "auth": false
+    },
+    {
+        "id": "navigation_amazon",
+        "input": "Navigate to the product page of 'iPhone 13' on Amazon.com and capture the price and availability information. URL: https://www.amazon.com/s?k=iPhone+13",
+        "expected_output": {
+            "product": "iPhone 13",
+            "price": "$799.00",
+            "availability": "In Stock"
+        },
+        "output_schema": null,
+        "comment": "The eval isn't that good because there is no one answer, but it is also a good eval because the answer is ambigious",
+        "auth": false
+    },
+    {
+        "id": "content_verification_thankyou",
+        "input": "Check if a 'Thank You' message appears on ExampleForm.com after submitting a feedback form. URL: https://exampleform.com/feedback",
+        "expected_output": {
+            "messageExists": true
+        },
+        "output_schema": null,
+        "auth": false
+    },
+    {
+        "id": "screenshot_capture_cnn",
+        "input": "Take a screenshot of the homepage of CNN.com, capturing the main news section. URL: https://www.cnn.com",
+        "expected_output": {
+            "screenshotSaved": true
+        },
+        "output_schema": null,
+        "auth": false
+    },
+    {
+        "id": "data_retrieval_stock",
+        "input": "Retrieve the closing stock price of Apple Inc. (AAPL) from the Nasdaq website's stock quote section. URL: https://www.nasdaq.com/market-activity/stocks/aapl",
+        "expected_output": {
+            "stockPrice": "$150.00"
+        },
+        "output_schema": null,
+        "auth": false
+    },
+    {
+        "id": "form_submission_gform",
+        "input": "Fill the form at https://docs.google.com/forms/d/e/1FAIpQLSfgq-HEtgUvYgGHB1oDqvmTJO9XR6EvIxLHv1kW8j9aZowW5w/viewform",
+        "expected_output": {
+            "formSubmissionStatus": "Success"
+        },
+        "output_schema": null,
+        "auth": false
+    },
+    {
+        "id": "form_submission_contact",
+        "input": "Enter details (such as name, email, and message) into the contact form on ExampleCompany.com and submit it. URL: https://examplecompany.com/contact, Name: John Doe, Email: johndoe@example.com, Message: Hello, I have a query.",
+        "expected_output": {
+            "formSubmissionStatus": "Success"
+        },
+        "output_schema": null,
+        "auth": false
+    },
+    {
+        "id": "navigation_facebook_profile",
+        "input": "Access a user's profile page on Facebook.com after logging in with a specific username and password. URL: https://facebook.com/login, Username: exampleUserFB, Password: examplePasswordFB, Profile Page: https://facebook.com/exampleUserFB/profile",
+        "expected_output": {
+            "profilePageAccessed": true
+        },
+        "output_schema": null,
+        "auth": false
+    },
+    {
+        "id": "content_verification_instock",
+        "input": "Verify that a specific book, e.g., '1984' by George Orwell, is listed as 'In Stock' on BarnesAndNoble.com. URL: https://www.barnesandnoble.com/s/1984+george+orwell",
+        "expected_output": {
+            "inStock": true
+        },
+        "output_schema": null,
+        "auth": false
+    },
+    {
+        "id": "screenshot_capture_ebay",
+        "input": "Capture the final confirmation screen of an online purchase on eBay.com after completing a checkout process for a specific item. URL: https://www.ebay.com/checkout",
+        "expected_output": {
+            "confirmationScreenCaptured": true
+        },
+        "output_schema": null,
+        "auth": false
+    }
+]

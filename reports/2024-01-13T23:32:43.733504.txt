@@ -1,0 +1,120 @@
+{
+    "total_tasks": 10,
+    "passed_tasks": 0,
+    "failed_tasks": [
+        {
+            "id": "data_retrieval_weather",
+            "description": "Extract the current temperature and weather condition from Weather.com for New York City. URL: https://www.weather.com/weather/today/l/New+York+City+NY?canonicalCityId=334edf24f99e49bb65c4d57fc8f7a2b3c6fc919784bba84c26b7b8a3c0654b5c",
+            "expected_output": {
+                "temperature": "70\u00b0F",
+                "condition": "Sunny"
+            },
+            "actual_output": {
+                "status": "Failed",
+                "message": "Dummy output - task not executed."
+            }
+        },
+        {
+            "id": "form_submission_twitter",
+            "description": "Fill in and submit the login form on Twitter.com with a specific username and password. URL: https://twitter.com/login, Username: exampleUser, Password: examplePassword",
+            "expected_output": {
+                "loginStatus": "Success",
+                "message": "Logged in successfully."
+            },
+            "actual_output": {
+                "status": "Failed",
+                "message": "Dummy output - task not executed."
+            }
+        },
+        {
+            "id": "navigation_amazon",
+            "description": "Navigate to the product page of 'iPhone 13' on Amazon.com and capture the price and availability information. URL: https://www.amazon.com/s?k=iPhone+13",
+            "expected_output": {
+                "product": "iPhone 13",
+                "price": "$799.00",
+                "availability": "In Stock"
+            },
+            "actual_output": {
+                "status": "Failed",
+                "message": "Dummy output - task not executed."
+            }
+        },
+        {
+            "id": "content_verification_thankyou",
+            "description": "Check if a 'Thank You' message appears on ExampleForm.com after submitting a feedback form. URL: https://exampleform.com/feedback",
+            "expected_output": {
+                "messageExists": true
+            },
+            "actual_output": {
+                "status": "Failed",
+                "message": "Dummy output - task not executed."
+            }
+        },
+        {
+            "id": "screenshot_capture_cnn",
+            "description": "Take a screenshot of the homepage of CNN.com, capturing the main news section. URL: https://www.cnn.com",
+            "expected_output": {
+                "screenshotSaved": true
+            },
+            "actual_output": {
+                "status": "Failed",
+                "message": "Dummy output - task not executed."
+            }
+        },
+        {
+            "id": "data_retrieval_stock",
+            "description": "Retrieve the closing stock price of Apple Inc. (AAPL) from the Nasdaq website's stock quote section. URL: https://www.nasdaq.com/market-activity/stocks/aapl",
+            "expected_output": {
+                "stockPrice": "$150.00"
+            },
+            "actual_output": {
+                "status": "Failed",
+                "message": "Dummy output - task not executed."
+            }
+        },
+        {
+            "id": "form_submission_contact",
+            "description": "Enter details (such as name, email, and message) into the contact form on ExampleCompany.com and submit it. URL: https://examplecompany.com/contact, Name: John Doe, Email: johndoe@example.com, Message: Hello, I have a query.",
+            "expected_output": {
+                "formSubmissionStatus": "Success"
+            },
+            "actual_output": {
+                "status": "Failed",
+                "message": "Dummy output - task not executed."
+            }
+        },
+        {
+            "id": "navigation_facebook_profile",
+            "description": "Access a user's profile page on Facebook.com after logging in with a specific username and password. URL: https://facebook.com/login, Username: exampleUserFB, Password: examplePasswordFB, Profile Page: https://facebook.com/exampleUserFB/profile",
+            "expected_output": {
+                "profilePageAccessed": true
+            },
+            "actual_output": {
+                "status": "Failed",
+                "message": "Dummy output - task not executed."
+            }
+        },
+        {
+            "id": "content_verification_instock",
+            "description": "Verify that a specific book, e.g., '1984' by George Orwell, is listed as 'In Stock' on BarnesAndNoble.com. URL: https://www.barnesandnoble.com/s/1984+george+orwell",
+            "expected_output": {
+                "inStock": true
+            },
+            "actual_output": {
+                "status": "Failed",
+                "message": "Dummy output - task not executed."
+            }
+        },
+        {
+            "id": "screenshot_capture_ebay",
+            "description": "Capture the final confirmation screen of an online purchase on eBay.com after completing a checkout process for a specific item. URL: https://www.ebay.com/checkout",
+            "expected_output": {
+                "confirmationScreenCaptured": true
+            },
+            "actual_output": {
+                "status": "Failed",
+                "message": "Dummy output - task not executed."
+            }
+        }
+    ]
+}
